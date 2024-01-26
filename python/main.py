@@ -1,14 +1,20 @@
 class A:
-    def __init__(self):
+    def __init__(self, name):
         print("init")
+        self.name = name
+        self.children = set()
 
     def __del__(self):
-        print("delete")
+        print("delete", self.name)
+
+    def add(self, child):
+        self.children.add(child)
 
 
 if __name__ == '__main__':
-    a = A()
-    del a
+    a = A("1")
+    b = A("2")
+    a.add(b)
     print("end")
 
 
@@ -16,6 +22,8 @@ if __name__ == '__main__':
 print 결과
 -----------
 init
-delete
+init
 end
+delete 1
+delete 2
 """
