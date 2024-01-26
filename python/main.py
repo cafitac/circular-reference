@@ -9,3 +9,12 @@ class A:
 if __name__ == '__main__':
     a = A()
     print("end")
+
+
+"""
+print 결과
+-----------
+init
+end
+delete
+"""
