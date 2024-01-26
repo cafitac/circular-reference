@@ -8,6 +8,7 @@ class A:
 
 if __name__ == '__main__':
     a = A()
+    del a
     print("end")
 
 
@@ -15,6 +16,6 @@ if __name__ == '__main__':
 print 결과
 -----------
 init
-end
 delete
+end
 """
